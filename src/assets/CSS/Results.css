@@ -1,0 +1,35 @@
+.results {
+  display: flex;
+  flex-direction: column;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+}
+.results-header__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.results-header__right button {
+  outline: none;
+  border: none;
+  background-color: #A445ED;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+.results-header__left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.results-header__left h1 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.results-header__left h2 {
+  font-size: 1.25rem;
+  color: #A445ED;
+}/*# sourceMappingURL=Results.css.map */

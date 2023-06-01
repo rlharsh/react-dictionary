@@ -1,0 +1,40 @@
+.results {
+    display: flex;
+    flex-direction: column;
+}
+
+.results-header {
+    display: flex;
+    justify-content: space-between;
+
+    &__right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            outline: none;
+            border: none;
+            background-color: #A445ED;
+            height: 3rem;
+            width: 3rem;
+            border-radius: 50%;
+        }
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+
+        h1 {
+            font-weight: 700;
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: #A445ED;
+        }
+    }
+}
