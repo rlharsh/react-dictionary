@@ -20,10 +20,6 @@ function App() {
     setTheme((currentTheme) => (currentTheme === 'light' ? 'dark' : 'light'));
   };
 
-  const submitForm = (val: string) => {
-    setSearchQuery(val);
-  }
-
   const setFont = (name: string, description: string) => {
     setFontStyle(name);
     setFontDescription(description);
