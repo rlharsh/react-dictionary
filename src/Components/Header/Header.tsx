@@ -1,7 +1,6 @@
 import { useContext } from 'react';
 import { ThemeContext } from '../../Hooks/ThemeContext';
 
-import '../../assets/css/Header.css';
 import Dropdown from '../Dropdown/Dropdown';
 
 const Header = () => {

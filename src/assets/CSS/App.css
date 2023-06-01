@@ -138,4 +138,18 @@ input:checked + .slider:before {
 
 .error-text {
   color: #FF5252;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.options__settings__theme-selector {
+  display: flex;
+  gap: 0.75rem;
+  padding-left: 1rem;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #979797;
 }/*# sourceMappingURL=App.css.map */
