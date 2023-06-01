@@ -3,7 +3,6 @@ import '../../assets/CSS/Search.css';
 import { ThemeContext } from '../../Hooks/ThemeContext';
 import { SearchContext } from '../../Hooks/SearchContext';
 
-
 const Search = () => {
   const themeContext = useContext(ThemeContext);
   const [errorVisible] = useState(false);
