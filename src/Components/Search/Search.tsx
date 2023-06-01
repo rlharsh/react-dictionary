@@ -6,7 +6,7 @@ import { SearchContext } from '../../Hooks/SearchContext';
 
 const Search = () => {
   const themeContext = useContext(ThemeContext);
-  const [errorVisible, setErrorVisible] = useState(false);
+  const [errorVisible] = useState(false);
 
   const searchContext = useContext(SearchContext);
 
