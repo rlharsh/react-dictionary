@@ -44,6 +44,25 @@ body {
     font-family: 'Inter';
 }
 
+.options {
+  margin-bottom: 2.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__settings {
+
+      &__theme-selector {
+          display: flex;
+          gap: .75rem;
+          padding-left: 1rem;
+          justify-content: center;
+          align-items: center;
+          border-left: 1px solid #979797;
+      }
+  }
+}
+
 .application-container {
     min-width: 100%;
     min-height: 100vh;
