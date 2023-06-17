@@ -3,9 +3,10 @@ import '../../assets/CSS/Search.css';
 import { ThemeContext } from '../../Hooks/ThemeContext';
 import { SearchContext } from '../../Hooks/SearchContext';
 
+
 const Search = () => {
   const themeContext = useContext(ThemeContext);
-  const [errorVisible] = useState(false);
+  const [errorVisible, setErrorVisible] = useState(false);
 
   const searchContext = useContext(SearchContext);
 
@@ -13,7 +14,7 @@ const Search = () => {
     throw new Error("Component must be used within a SearchContextProvider");
   }
 
-  const { setSearchQuery } = searchContext;
+  const { searchQuery, setSearchQuery } = searchContext;
 
   if (!themeContext) {
       throw new Error("useContext must be used within a ThemeProvider");
@@ -38,8 +39,8 @@ const Search = () => {
     const formElements = form.elements as typeof form.elements & {
       search: HTMLInputElement
     };
-    setSearchQuery(formElements.search.value);
-    //submitForm(formElements.search.value);
+
+    formElements.search.value === '' ? setErrorVisible(true) : (setErrorVisible(false), setSearchQuery(formElements.search.value));
   }
 
   return (

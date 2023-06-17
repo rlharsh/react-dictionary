@@ -40,11 +40,13 @@ function App() {
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
         <FontContext.Provider value={fontValue}>
           <div className={`application-container sans-serif ${theme === 'dark' ? 'dark' : 'light'}`}>
+            <div className="app-wrapper">
             <Header />
             <SearchContext.Provider value={{ searchQuery, setSearchQuery }}>
               <Search />
               <Results />
             </SearchContext.Provider>
+            </div>
           </div>
         </FontContext.Provider>
     </ThemeContext.Provider>

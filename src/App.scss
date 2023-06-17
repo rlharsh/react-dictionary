@@ -66,6 +66,11 @@ body {
     color: #FFF;
 }
 
+.app-wrapper {
+  max-width: 737px;
+  margin: 0 auto;
+}
+
 /* The switch - the box around the slider */
 .switch {
   position: relative;
@@ -169,4 +174,21 @@ input:checked + .slider:before {
           border-left: 1px solid #979797;
       }
   }
+}
+
+.line {
+  height: 1px;
+  background-color: #E9E9E9;
+}
+
+.dark-text {
+  color: #757575;
+}
+
+.purple-text {
+  color: #A445ED;
+}
+
+.underline {
+  text-decoration: underline;
 }
