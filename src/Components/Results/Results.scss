@@ -7,6 +7,7 @@
 .synonyms {
     display: flex;
     gap: 2.5rem;
+    margin-bottom: 2rem;
 
     .purple-text {
         font-weight: 700;
@@ -115,5 +116,17 @@
 
     h2 {
         font-weight: 700;
+    }
+}
+
+.source {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    a {
+        display: flex;
+        gap: 1rem;
+        text-decoration: none;
     }
 }
