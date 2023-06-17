@@ -14,7 +14,7 @@ const Search = () => {
     throw new Error("Component must be used within a SearchContextProvider");
   }
 
-  const { searchQuery, setSearchQuery } = searchContext;
+  const { setSearchQuery } = searchContext;
 
   if (!themeContext) {
       throw new Error("useContext must be used within a ThemeProvider");
